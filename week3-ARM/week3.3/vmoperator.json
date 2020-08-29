@@ -1,0 +1,16 @@
+{
+  "Name": "VMOperator",
+  "IsCustom": true,
+  "Description": "Can start,stop virtual machines and make tickets to support.",
+  "Actions": [
+    "Microsoft.Compute/virtualMachines/start/action",
+    "Microsoft.Compute/virtualMachines/poweroff/action",
+    "Microsoft.Support/supporttickets/write"
+  ],
+  "NotActions": [
+
+  ],
+  "AssignableScopes": [
+    "/subscriptions/8362f2f5-4842-4930-8174-4cb43d8888c2"
+  ]
+}
