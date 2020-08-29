@@ -1,0 +1,22 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminUsername": {
+        "reference": {
+            "keyVault": {
+                "id": "/subscriptions/8362f2f5-4842-4930-8174-4cb43d8888c2/resourceGroups/rg-weektest/providers/Microsoft.KeyVault/vaults/KV-bartekproject-dev-01"
+                  },
+            "secretName": "login"
+                }
+        },
+        "adminPasswordOrKey": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/8362f2f5-4842-4930-8174-4cb43d8888c2/resourceGroups/rg-weektest/providers/Microsoft.KeyVault/vaults/KV-bartekproject-dev-01"
+                      },
+                "secretName": "passwordToVM"
+                    }
+        }
+    }
+}
