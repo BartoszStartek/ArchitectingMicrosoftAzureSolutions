@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-06-01",
+      "name": "VNET",
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri":"https://raw.githubusercontent.com/BartoszStartek/ArchitectingMicrosoftAzureSolutions/master/week3-ARM/VNET.json",
+          "contentVersion":"1.0.0.0"
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-06-01",
+      "name": "NSG",
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri":"https://raw.githubusercontent.com/BartoszStartek/ArchitectingMicrosoftAzureSolutions/master/week3-ARM/NSG.json",
+          "contentVersion":"1.0.0.0"
+        }
+      },
+        "dependsOn":["VNET"]
+    },
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-06-01",
+      "name": "SUBNETS",
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri":"https://raw.githubusercontent.com/BartoszStartek/ArchitectingMicrosoftAzureSolutions/master/week3-ARM/2subnets.json",
+          "contentVersion":"1.0.0.0"
+        }
+      },
+      "dependsOn":["NSG"]
+    },
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-06-01",
+      "name": "VMs",
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri":"https://raw.githubusercontent.com/BartoszStartek/ArchitectingMicrosoftAzureSolutions/master/week3-ARM/2VMs.json",
+          "contentVersion":"1.0.0.0"
+        }
+      },
+        "dependsOn":["SUBNETS"]
+    }
+  ],
+  "outputs": {}
+}
