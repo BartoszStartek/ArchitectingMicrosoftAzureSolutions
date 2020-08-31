@@ -1,10 +1,10 @@
 Pod lupę wziąłem trochę więcej wzorców niż w poleceniu, ale dużo jest według mnie godnych zastosowania.<br/>
-<b>THROTTLING</b><br/>
+<b>Throttling</b><br/>
 Ograniczenie ilości zapytań podczas krótkotrwałych okresów dużego popytu.<br/>
 Dodatkowo dzięki throttlingowi jesteśmy w stanie zagwarantować dostęp do usługi zgodny z SLA bez konieczności auto skalowania.<br/>
 Zaletą throttlingu jest informacja zwrotna którą otrzymuje aplikacja kliencka czy klient o przekroczeniu ilości zapytań.<br/>
 Przykład usługi do zastosowania: API Management<br/>
-<b>AUTOSCALLING</b><br/>
+<b>Autoscalling</b><br/>
 Zdolność aplikacji do dynamicznej zmiany swoich rozmiarów, dzięki czemu uzyskujemy wysoką <br/>
 wydajność i dostępność nawet w krytycznych momentach takich jak np. black Friday.
 Jeżeli większość naszych klientów jest np. z Europy to możemy zmniejszyć liczbę instancji w godzinach <br/>
