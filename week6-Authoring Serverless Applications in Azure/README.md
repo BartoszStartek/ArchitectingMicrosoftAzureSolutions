@@ -15,7 +15,7 @@ Tym razem chcemy faktycznie zbudować aplikację Cloud Native i najchętniej tak
 #6.3<br/>	Jeśli masz już dość myślenia i planowania i nie możesz doczekać się by coś zrobić praktycznie to zadanie nr 3 jest dla Ciebie  Chciałbym byś połączył kilka komponentów za sobą a przy tym nie wydał strasznej ilość budżetu. Język pisania dowolny<br/>
 <b>Opis zadania:</b><br/> 
 -Stwórz prostą funkcję, opartą o timer, która dodaje wiadomości do kolejki typu Storage Queue. <br/>
--Stwórz drugą funkcję, która czeka na wiadomości w Storage Queue i zapisuje jej do bazy – może to być darmowa wersja Azure SQL Database/CosmosDb. <br/>
--Stwórz trzecią funkcję, która reaguje na request http i dla podanej w parametrze daty z dokładnością do dnia (żeby było prościej) zwraca z bazy wszystkie komunikaty z tego dnia, które tam zostały zapisane, najlepiej w postaci JSON’a <br/>
+-Stwórz drugą funkcję, która czeka na wiadomości w Storage Queue i zapisuje jej do bazy. <br/>
+-Stwórz trzecią funkcję, która reaguje na request http i dla podanej w parametrze daty zwraca pewną wartość.<br/>
 -Stwórz Azure API Management (kiedy będziesz miał już wszystkie inne elementy gotowe) i wystaw na Azure API Management funkcję z zadania nr 3. Dodatkowo, dodaj do wywołania tej funkcji politykę, która nie pozwala jej wywołać częściej w minucie niż trzy razy <br/>
 Have fun! To zadanie pokaże Ci (mam nadzieję w prosty sposób, czym są i jak działają funkcje)
