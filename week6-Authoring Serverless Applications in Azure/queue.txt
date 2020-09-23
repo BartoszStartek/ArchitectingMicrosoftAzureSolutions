@@ -1,0 +1,12 @@
+using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Host;
+using Microsoft.Extensions.Logging;
+using System;
+
+        public static void Run(string MyQueueItem, out dynamic document, ILogger log)
+        {
+            document = new { Description = MyQueueItem, number = Guid.NewGuid() };
+            log.LogInformation($"C# Queue trigger function inserted one row");
+            log.LogInformation($"Description={MyQueueItem}");
+        }
+ 

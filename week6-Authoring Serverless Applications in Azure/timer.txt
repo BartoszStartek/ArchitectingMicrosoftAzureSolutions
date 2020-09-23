@@ -1,0 +1,7 @@
+using System;
+
+public static void Run(TimerInfo myTimer, ILogger log, ICollector<string> outputQueueItem)
+{
+    outputQueueItem.Add("Name passed to the function: " + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"));
+    log.LogInformation($"C# Timer trigger function send message to Storage Queue at: {DateTime.Now}");
+}
