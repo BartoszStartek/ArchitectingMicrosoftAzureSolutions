@@ -29,5 +29,4 @@ Co ma powstać:
 3)	Zrób odpowiednią segmentacje ruchu pomiędzy sieciami za pomocą NSG oraz ASG, tak by tylko ruch, który powinien wchodził i wychodził z danych segmenetów sieci
 4)	Przed całym rozwiązaniem postaw Azure Traffic Managera i skonfiguruj go w dowolnej opcji i sprawdź jak działa
 5)	Na koniec, ustaw logowanie wszystkich NSG do Azure Traffic Analytics i zobacz po 24h jaki ruch tam został zarejestrowany
-6)	Na koniec, sprawdź czy Twoje NSG i ASG poprawnie działają za pomocą narzędzie Network Watcher i dostępnych tam opcji.</br></br>
-Liczę na dobre zrzuty ekranu i opis rozwiązania.  
+6)	Na koniec, sprawdź czy Twoje NSG i ASG poprawnie działają za pomocą narzędzie Network Watcher i dostępnych tam opcji.
