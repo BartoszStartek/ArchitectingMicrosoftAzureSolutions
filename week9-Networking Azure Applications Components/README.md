@@ -9,10 +9,10 @@ Na razie przyjmij, że o sieci w chmurze to właśnie Ty wiesz najwięcej! I tak
 <b>Zadanie:</b>
 
 #9.1 Dlatego teraz przed Tobą nie lada wyzwanie:
-1.	Przeczytaj poniższe dokumenty. Jeśli miałeś szansę je poznać czytając linki pod pracami domowymi to masz już ten etap z głowy. Materiał pomoże Ci w planowaniu migracji.
-	https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/dmz/secure-vnet-dmz
-	https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke
-	https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/shared-services
+1.	Przeczytaj poniższe dokumenty. Jeśli miałeś szansę je poznać czytając linki pod pracami domowymi to masz już ten etap z głowy. Materiał pomoże Ci w planowaniu migracji.</br>
+-https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/dmz/secure-vnet-dmz</br>
+-https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke</br>
+-https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/shared-services</br>
 2.	Przypomnij sobie wiedzę o usługach, które omówiliśmy. Szczególnie te podstawowe elementy oraz architektury sieci będą dla Ciebie ważne. 
 3.	Wypisz od 5 do 10 rekomendacji dla osób od sieci jak powinna być zaprojektowana sieć w Azure.
 </br>Zwróć uwagę na takie elementy jak:</br>
